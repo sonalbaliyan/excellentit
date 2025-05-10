@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.mybtn {
+    /* background-color: #e5102d; */
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.para {
+    font-weight: 500;
+}
+
+.aboutbtn {
+    font-size: 16px;
+    font-weight: 600;
+    background-color: rgb(244, 208, 208);
+    color: red;
+}
+
+#myabout {
+    background-color: rgba(248, 226, 224, 0.646);
+    border-radius: 600px 0 200px 0;
+    position: relative;
+}
+
+.aboutbox {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(250, 209, 104);
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    animation: animat 5s ease infinite;
+}
+
+@keyframes animat {
+    20% {
+        background-color: rgb(164, 250, 131);
+        width: 50px;
+        height: 50px;
+    }
+
+    40% {
+        background-color: rgb(139, 175, 248);
+        transform: translate(800px);
+        width: 70px;
+        height: 70px;
+    }
+
+    60% {
+        background-color: rgba(250, 131, 194, 0.181);
+        transform: translateY(100px);
+        width: 80px;
+        height: 80px;
+    }
+
+    80% {
+        background-color: rgb(255, 115, 115);
+        transform: translate(200px);
+        width: 10px;
+        height: 10px;
+    }
+
+    100% {
+        background-color: rgba(131, 250, 194, 0.163);
+        transform: translateY(-100px);
+    }
+}
+
+#company{
+    background-color: rgb(230, 250, 247);
+}
+
+.companyborder{
+    transition: all 0.2s ease;
+}
+
+.companyborder:hover{
+    border-top: 4px solid rgb(248, 115, 115);
+    border-radius: 15px;
+}
+
+#mytes{
+    background: linear-gradient(45deg , rgba(34, 240, 185, 0.097),rgb(223, 87, 207),rgb(236, 158, 80));
+border-radius: 600px 0 0 0;
+}
+
+
+#focus>div{
+    background-color: rgb(146, 38, 38);
+    position: relative;
+    color: #fff;
+    border-radius: 20px;
+}
+
+/* button top code ----------------------------------------------------  */
+.topbtn {
+    display: none;
+    cursor: pointer;
+    position: fixed; 
+    bottom: 40px;
+    right: 20px;
+    z-index: 999;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background:#1b8545;
+    border: none;
+  }
+  
+  .topbtn i{
+    font-size: 2vw;
+    color: #111;
+  }
